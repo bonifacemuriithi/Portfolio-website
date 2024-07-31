@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boniface Muriithi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav id="desktop_nav">
+            <div class="logo">Boniface Muriithi</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="hamburger_nav">
+            <div class="logo">Boniface Muriithi</div>
+            <div class="hamburger_menu">
+                <div class="hamburger_icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu_links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Boniface profile Picture">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Boniface Muriithi</h1>
+                <p class="section__text__p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contact info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="Boniface Muriithi - LinkedIn Profile" class="icon" onclick="window.open('https://www.linkedin.com/in/boniface-muriithi-0347052a6', '_blank');">
+                    <img src="./assets/github.png" alt="Boniface Muriithi - GitHub Profile" class="icon" onclick="window.open('https://www.github.com/bonifacemuriithi', '_blank');">
+                </div>
+            </div>
+        </section>
+        
+        <section id="about">
+            <p class="section__text__p1">Get to know more</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>2+ years <br>Frontend Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education icon" class="icon">
+                            <h3>Education</h3>
+                            <p>B.Sc. Bachelors Degree</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                       
+                            Hello! I'm Boniface Muriithi, a passionate Frontend Developer with over 2 years of experience. I specialize in HTML, CSS, JavaScript, and modern frameworks to create user-friendly web applications.I hold a Bachelor's degree in Business Information Technology from Meru University of Science and Technology. My experience includes working on diverse projects, from small business websites to complex applications. I enjoy teaching web development at Rhema Institute and exploring new technologies. Let's connect! Reach me at bonifacemuriithimwitu@gmail.com or on LinkedIn                  
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
+        </section>
+        
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>SASS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>TypeScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Material UI</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>PostgreSQL</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Node JS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Express JS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+        </section>
+        
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project One</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Two</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+        </section>
+        
+        <section id="contact">
+            <p class="section__text__p1">Let's Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container contact-details">
+                        <div class="contact-info">
+                            <p><strong>Email:</strong> <a href="mailto:bonifacemuriithimwitu@gmail.com">bonifacemuriithimwitu@gmail.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:+254112800206">+254112800206</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Boniface Muriithi. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu_links');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
