@@ -167,11 +167,19 @@ section{
     gap: 80px;
     height: 80vh;
 }
-.section__pic-container{
+.section__pic-container {
+    max-width: 100%;
     display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__pic-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* If you want the image to be circular */
+}
+
 
 
     
