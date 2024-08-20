@@ -68,16 +68,16 @@ a:hover {
 
 /* HAMBURGER MENU */
 
-#hamburger-nav {
+#hamburger_nav {
   display: none;
 }
 
-.hamburger-menu {
+.hamburger_menu {
   position: relative;
   display: inline-block;
 }
 
-.hamburger-icon {
+.hamburger_icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,7 +86,7 @@ a:hover {
   cursor: pointer;
 }
 
-.hamburger-icon span {
+.hamburger_icon span {
   width: 100%;
   height: 2px;
   background-color: black;
