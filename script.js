@@ -1,6 +1,6 @@
 function toggleMenu() {
-    const menu = document.querySelector(".menu_links"); 
-    const icon = document.querySelector(".hamburger_icon"); 
+    const menu = document.querySelector(".menu-links"); 
+    const icon = document.querySelector(".hamburger-icon"); 
     
     // Toggle the 'open' class on both elements
     menu.classList.toggle("open");
