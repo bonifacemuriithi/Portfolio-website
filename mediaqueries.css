@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
+  #desktop_nav {
     display: none;
   }
   #hamburger_nav {
