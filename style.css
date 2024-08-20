@@ -90,18 +90,19 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu_links {
+  display: none; /* Hidden by default */
   position: absolute;
   top: 100%;
   right: 0;
   background-color: white;
-  width: fit-content;
+  width: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu_links a {
@@ -111,15 +112,16 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu_links li {
   list-style: none;
 }
 
-.menu_links.open {
-  max-height: 300px;
+.menu_links.show {
+  display: block; /* Visible when the menu is toggled */
+  max-height: 300px; /* Adjust based on the number of items */
 }
 
 .hamburger_icon.open span:first-child {
@@ -132,18 +134,6 @@ a:hover {
 
 .hamburger_icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger_icon span:first-child {
-  transform: none;
-}
-
-.hamburger_icon span:first-child {
-  opacity: 1;
-}
-
-. span:first-child {
-  transform: none;
 }
 
 /* SECTIONS */
@@ -255,10 +245,6 @@ section {
 
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
 }
 
 /* ABOUT SECTION */
@@ -395,41 +381,36 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
-  padding: 0.5rem;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+  gap: 1rem;
+  font-weight: 600;
 }
 
 .contact-info-container p {
-  font-size: larger;
+  font-weight: 400;
 }
 
 .contact-icon {
-  cursor: default;
-}
-
-.email-icon {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
+/* FOOTER */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer p {
-  text-align: center;
-}
 
 
 
